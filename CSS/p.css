@@ -74,7 +74,7 @@ a{
     background-color: gray;
 }
 .bg-img{
-    background-image: radial-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)) ,url(./Images/home_bg.jpg);
+    background-image: radial-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)) ,url(../Images/home_bg.jpg);
     background-size: cover;
     background-position:center ;
     background-repeat: no-repeat;
@@ -144,7 +144,7 @@ a{
     align-items: center;
 }
 .bg-img2{
-    background-image:url('./Images/collage.jpg');
+    background-image:url('../Images/collage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
@@ -177,7 +177,7 @@ a{
     align-items: center;
 }
 .bg-img3{
-    background: url("./Images/aboutusimg.jpg");
+    background: url("../Images/aboutusimg.jpg");
     background-repeat: no-repeat;
     height: 300px;
     width: 40%;
