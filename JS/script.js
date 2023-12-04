@@ -2,7 +2,7 @@ console.log("Welcome to Spotify");
 
 // Initialize the Variables
 let songIndex = 0;
-let audioElement = new Audio('/music/s1.mp3');
+let audioElement = new Audio('../music/s1.mp3');
 let masterPlay = document.getElementById('masterPlay');
 let myProgressBar = document.getElementById('myProgressBar');
 let gif = document.getElementById('gif');
@@ -11,18 +11,18 @@ let songItems = Array.from(document.getElementsByClassName('songItem'));
 let splay=document.getElementsByClassName('songItemPlay');
 
 let songs = [
-        { songName: "Kina Chir", filePath: "/music/s1.mp3", coverPath: "/Images/1.png" },
-        { songName: "Lover", filePath: "/music/s2.mp3", coverPath: "/Images/2.png" },
-        { songName: "Fools", filePath: "/music/s3.mp3", coverPath: "/Images/3.png" },
-        { songName: "Teri Yaad", filePath: "/music/s4.mp3", coverPath: "/Images/4.png" },
-        { songName: "Sarkaare", filePath: "/music/s5.mp3", coverPath: "/Images/5.png" },
-        { songName: "Saiyaan", filePath: "/music/s6.mp3", coverPath: "/Images/6.png" },
-        { songName: "Sunflower", filePath: "/music/s7.mp3", coverPath: "/Images/7.png" },
-        { songName: "Enna Sona", filePath: "/music/s8.mp3", coverPath: "/Images/8.png" },
-        { songName: "Agar Tum Saath Ho", filePath: "/music/s9.mp3", coverPath: "/Images/9.png" },
-        { songName: "Tera Hua", filePath: "/music/s10.mp3", coverPath: "/Images/10.png" },
-        { songName: "Dil Ibadat", filePath: "/music/s11.mp3", coverPath: "/Images/11.png" },
-        { songName: "Tu Hi Haqeeqat", filePath: "/music/s12.mp3", coverPath: "/Images/12.png" },
+        { songName: "Kina Chir", filePath: "../music/s1.mp3", coverPath: "../Images/1.png" },
+        { songName: "Lover", filePath: "../music/s2.mp3", coverPath: "../Images/2.png" },
+        { songName: "Fools", filePath: "../music/s3.mp3", coverPath: "../Images/3.png" },
+        { songName: "Teri Yaad", filePath: "../music/s4.mp3", coverPath: "../Images/4.png" },
+        { songName: "Sarkaare", filePath: "../music/s5.mp3", coverPath: "../Images/5.png" },
+        { songName: "Saiyaan", filePath: "../music/s6.mp3", coverPath: "../Images/6.png" },
+        { songName: "Sunflower", filePath: "../music/s7.mp3", coverPath: "../Images/7.png" },
+        { songName: "Enna Sona", filePath: "../music/s8.mp3", coverPath: "../Images/8.png" },
+        { songName: "Agar Tum Saath Ho", filePath: "../music/s9.mp3", coverPath: "../Images/9.png" },
+        { songName: "Tera Hua", filePath: "../music/s10.mp3", coverPath: "../Images/10.png" },
+        { songName: "Dil Ibadat", filePath: "../music/s11.mp3", coverPath: "../Images/11.png" },
+        { songName: "Tu Hi Haqeeqat", filePath: "../music/s12.mp3", coverPath: "../Images/12.png" },
     ];
     
     
@@ -73,7 +73,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         songIndex = parseInt(e.target.id);
         e.target.classList.remove('fa-play-circle');
         e.target.classList.add('fa-pause-circle');
-        audioElement.src = `/music/s${songIndex+1}.mp3`;
+        audioElement.src = `../music/s${songIndex+1}.mp3`;
         masterSongName.innerText = songs[songIndex].songName;
         audioElement.currentTime = 0;
         audioElement.play();
@@ -90,7 +90,7 @@ document.getElementById('next').addEventListener('click', ()=>{
     else{
         songIndex += 1;
     }
-    audioElement.src = `/music/s${songIndex+1}.mp3`;
+    audioElement.src = `../music/s${songIndex+1}.mp3`;
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
@@ -106,7 +106,7 @@ document.getElementById('previous').addEventListener('click', ()=>{
     else{
         songIndex -= 1;
     }
-    audioElement.src = `/music/s${songIndex+1}.mp3`;
+    audioElement.src = `../music/s${songIndex+1}.mp3`;
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
