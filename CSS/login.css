@@ -1,7 +1,7 @@
 body {
     background-color: black; /* Change the background color */
     font-family: Arial, sans-serif; /* Choose a suitable font */
-    background-image: url("/Images/home_bg.jpg");
+    background-image: url("../Images/home_bg.jpg");
   }
   
   .center-box {
